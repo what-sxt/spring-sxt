@@ -1,7 +1,7 @@
 package com.api.common.web;
 
 import java.io.Serializable;
-import java.util.HashMap;
+import java.util.Collections;
 
 import org.apache.commons.lang.StringUtils;
 
@@ -26,12 +26,12 @@ public class Result implements Serializable {
 
     private Result(String code, Object result, String message) {
         this.code = code;
-        if (result != null && "".equals(String.valueOf(result).trim())) {
-            this.result = new HashMap<String, Object>();
-        } else {
-            this.result = result;
-        }
+        this.result = isEmpty(result)? Collections.emptyMap(): result;
         this.message = message;
+    }
+    
+    private boolean isEmpty(Object obj) {
+    	return obj == null || "".equals(String.valueOf(obj).trim()) || "null".equals(String.valueOf(obj));
     }
 
     /**
