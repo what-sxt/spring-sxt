@@ -1,7 +1,7 @@
 # spring-sxt
 
 #### api响应格式:
-
+<pre>
 <code>
 {
     "code": "0",       // 0: 成功, 1: 失败
@@ -9,6 +9,7 @@
 	"result": {"xxx"}  // 正确响应内容
 }
 </code>
+</pre>
 
 #### 代码格式:
 ![](https://raw.githubusercontent.com/what-sxt/spring-sxt/master/template.png)
