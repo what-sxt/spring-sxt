@@ -23,8 +23,8 @@
 ![](https://raw.githubusercontent.com/what-sxt/spring-sxt/master/template.png)
 
 #### 4. 代码格式:
-
 <pre><code>
+<font style='font-family:Comic Sans MS'>
  &lt;!-- 注解 --&gt;
 	&lt;mvc:annotation-driven &gt;
 		&lt;mvc:message-converters&gt;
@@ -40,6 +40,7 @@
 	
 	&lt;!-- 异常处理 --&gt;
 	&lt;bean id=&quot;exceptionResolver&quot; class=&quot;com.api.common.exception.exceptionHanlder.SpringIelpmExceptionJsonHandler&quot; /&gt;
+	</font>
 </code></pre>
 
 
