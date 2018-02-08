@@ -23,8 +23,8 @@
 ![](https://raw.githubusercontent.com/what-sxt/spring-sxt/master/template.png)
 
 #### 4. 代码格式:
-<pre><code>
-<font style='font-family:'Futura'>
+<code>
+<font style='font-family:'Consolas'>
  &lt;!-- 注解 --&gt;
 &lt;mvc:annotation-driven &gt;
   &lt;mvc:message-converters&gt;
@@ -32,16 +32,13 @@
   &lt;/mvc:message-converters&gt;
 &lt;/mvc:annotation-driven&gt;
 	
-&lt;!-- controller--&gt;
-&lt;context:component-scan base-package=&quot;com.activity.market.api.controller&quot;/&gt;
-	
 &lt;!-- 响应结果 --&gt;
 &lt;bean id=&quot;resultResponseBodyAdvice&quot; class=&quot;com.api.common.spring.advice.ResultResponseBodyAdvice&quot; /&gt;
 	
 &lt;!-- 异常处理 --&gt;
 &lt;bean id=&quot;exceptionResolver&quot; class=&quot;com.api.common.exception.exceptionHanlder.SpringIelpmExceptionJsonHandler&quot; /&gt;
 	</font>
-</code></pre>
+</code>
 
 
 
