@@ -4,9 +4,9 @@
 <pre>
 <code>
 {
-    "code": "0",       // 0: 成功, 1: 失败
-	"message": "",     // 错误信息
-	"result": {"xxx"}  // 正确响应内容
+  "code": "0",       // 0: 成功, 1: 失败
+  "message": "",     // 错误信息
+  "result": {"xxx"}  // 正确响应内容
 }
 </code>
 </pre>
