@@ -1,28 +1,21 @@
 # spring-sxt
 
-#### 1. api正确返回格式:
+#### api响应格式:
 
 <code>
 {
-    "code": "0",
-	"message": "", 
-	"result": {"xxx"}
+    "code": "0",       // 0: 成功, 1: 失败
+	"message": "",     // 错误信息
+	"result": {"xxx"}  // 正确响应内容
 }
 </code>
 
-#### 2. api错误返回格式:
-<code>
-{
-    "code": "1",
-	"message": "xxx", 
-	"result": {}
-}
-</code>
-
-#### 3. 代码格式:
+#### 代码格式:
 ![](https://raw.githubusercontent.com/what-sxt/spring-sxt/master/template.png)
 
-#### 4. 代码格式:
+
+***
+#### 1. 修改spring配置:
 <pre>
 <code>
 <font style='font-family:Comic Sans MS'>
@@ -40,6 +33,8 @@
 &lt;bean id=&quot;exceptionResolver&quot; class=&quot;com.api.common.exception.exceptionHanlder.SpringIelpmExceptionJsonHandler&quot; /&gt;
 	</font>
 </code></pre>
+#### 2. 配置后代码():
+![](https://raw.githubusercontent.com/what-sxt/spring-sxt/master/cfg-template.png)
 
 
 
