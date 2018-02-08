@@ -24,17 +24,26 @@
 
 #### 4. 代码格式:
 
-<mvc:annotation-driven >
-  <mvc:message-converters>
-    <bean id="emptyHttpMessageConverter"class="com.api.common.spring.message.conver.EmptyJsonHttpMessageConverter"/>
-  </mvc:message-converters>
-</mvc:annotation-driven>
+<pre><code>
+ &lt;!-- 注解 --&gt;
+	&lt;mvc:annotation-driven &gt;
+		&lt;mvc:message-converters&gt;
+			&lt;bean id=&quot;emptyHttpMessageConverter&quot; class=&quot;com.api.common.spring.message.conver.EmptyJsonHttpMessageConverter&quot;/&gt;
+		&lt;/mvc:message-converters&gt;
+	&lt;/mvc:annotation-driven&gt;
+	
+	&lt;!-- controller--&gt;
+	&lt;context:component-scan base-package=&quot;com.activity.market.api.controller&quot;/&gt;
+	
+	&lt;!-- 响应结果 --&gt;
+	&lt;bean id=&quot;resultResponseBodyAdvice&quot; class=&quot;com.api.common.spring.advice.ResultResponseBodyAdvice&quot; /&gt;
+	
+	&lt;!-- 异常处理 --&gt;
+	&lt;bean id=&quot;exceptionResolver&quot; class=&quot;com.api.common.exception.exceptionHanlder.SpringIelpmExceptionJsonHandler&quot; /&gt;
+</code></pre>
 
 
-<bean id="resultResponseBodyAdvice" class="com.api.common.spring.advice.ResultResponseBodyAdvice" />
 
-
-<bean id="exceptionResolver" class="com.api.common.exception.exceptionHanlder.SpringIelpmExceptionJsonHandler" />
 
 
 
