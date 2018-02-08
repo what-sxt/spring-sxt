@@ -24,22 +24,22 @@
 
 #### 4. 代码格式:
 <pre><code>
-<font style='font-family:Comic Sans MS'>
+<font style='font-family:'Futura'>
  &lt;!-- 注解 --&gt;
-	&lt;mvc:annotation-driven &gt;
-		&lt;mvc:message-converters&gt;
-			&lt;bean id=&quot;emptyHttpMessageConverter&quot; class=&quot;com.api.common.spring.message.conver.EmptyJsonHttpMessageConverter&quot;/&gt;
-		&lt;/mvc:message-converters&gt;
-	&lt;/mvc:annotation-driven&gt;
+&lt;mvc:annotation-driven &gt;
+  &lt;mvc:message-converters&gt;
+	&lt;bean id=&quot;emptyHttpMessageConverter&quot; class=&quot;com.api.common.spring.message.conver.EmptyJsonHttpMessageConverter&quot;/&gt;
+  &lt;/mvc:message-converters&gt;
+&lt;/mvc:annotation-driven&gt;
 	
-	&lt;!-- controller--&gt;
-	&lt;context:component-scan base-package=&quot;com.activity.market.api.controller&quot;/&gt;
+&lt;!-- controller--&gt;
+&lt;context:component-scan base-package=&quot;com.activity.market.api.controller&quot;/&gt;
 	
-	&lt;!-- 响应结果 --&gt;
-	&lt;bean id=&quot;resultResponseBodyAdvice&quot; class=&quot;com.api.common.spring.advice.ResultResponseBodyAdvice&quot; /&gt;
+&lt;!-- 响应结果 --&gt;
+&lt;bean id=&quot;resultResponseBodyAdvice&quot; class=&quot;com.api.common.spring.advice.ResultResponseBodyAdvice&quot; /&gt;
 	
-	&lt;!-- 异常处理 --&gt;
-	&lt;bean id=&quot;exceptionResolver&quot; class=&quot;com.api.common.exception.exceptionHanlder.SpringIelpmExceptionJsonHandler&quot; /&gt;
+&lt;!-- 异常处理 --&gt;
+&lt;bean id=&quot;exceptionResolver&quot; class=&quot;com.api.common.exception.exceptionHanlder.SpringIelpmExceptionJsonHandler&quot; /&gt;
 	</font>
 </code></pre>
 
